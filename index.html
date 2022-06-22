@@ -2,13 +2,152 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PagJuana</title>
+   
+    <title>Grandma's Recipes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylePC.css">
+
+    <style>
+        body {font-family:"Times New Roman", serif  }
+        h1,h2,h3,h4,h5,h6 {font-family:serif; letter-spacing:4px}
+    </style>   
+
+<style>
+    body {
+        background-color:white;
+        color:black;
+    }
+      
+    .dark-mode {
+      background-color: #292929;
+      color:white
+    }
+
+
+</style>
+
+    
+<script>
+    function mymessage() {
+  alert("Subscribe to our newsletter!")
+    }
+
+</script>
+
+
 </head>
-<body>
-    <h1>Clase 2 - Juana</h1>
-    <a href="https://github.com/JuanaSantacreu/Repositorio-Juana" target="_blank">Repositorio de GitHub</a>
+
+<body onload="mymessage()">
+
+
+<div class="w3-top w3-bar w3-white w3-padding w3-card w3-wide">
+    <a href="#home" class="w3-bar-item w3-button">Grandma's Recipes</a>
+    
+    <div class="w3-right w3-hide-small">
+        <a href="#about" class="w3-bar-item w3-button">About</a>
+        <a href="#recipes" class="w3-bar-item w3-button">Recipes</a>
+        <a href="#subscribe" class="w3-bar-item w3-button">Subscribe</a>
+        <button style="margin-top:1%"> <i class="fa fa-search w3-large" style="margin-top:5%"></i> </button>
+
+    </div>
+</div>
+  
+<div id="home" class="w3-content">
+  
+    <div class="w3-padding-top-64">
+        <div class="w3-display-container">
+            <img src="AbuelaCocinando-Header.jpg" style="width:100%">
+        
+
+            <div id=recipes class="w3-container w3-padding-64" style="width:90%; margin:auto"> 
+        
+                <div class="w3-card-4 w3-third w3-padding-large" style="width:30%; margin-right:5%">
+                    <img src="RECETA 1.png" style="width: 100%">
+                    <div class="w3-container w3-center">
+                        <h4>RECETA 1 </h4> 
+                        <p>TEXTO RECETA 1</p>
+                    </div>
+                </div>
+                
+                <div class="w3-card-4 w3-third w3-padding-large" style="width:30%">
+                    <img src="RECETA 1.png" style="width: 100%">
+                    <div class="w3-container w3-center">
+                        <h4>RECETA 2 </h4> 
+                        <p>TEXTO RECETA 2</p>
+                    </div>
+                </div>
+
+                <div class="w3-card-4 w3-third w3-padding-large" style="width:30%; margin-left: 5%;">
+                    <img src="RECETA 1.png" style="width: 100%">
+                    <div class="w3-container w3-center">
+                        <h4>RECETA 2 </h4> 
+                        <p>TEXTO RECETA 3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+
+
+<div id="about" class="w3-padding-top-64 w3-padding-bottom-64">
+    <div class="w3-row w3-content" >
+    
+        <div class="w3-half w3-padding-large w3-hide-small">
+            <img src="ABOUT.jpg" class="w3-round w3-image w3-opacity-min" alt="Table" style="width:100%">
+        </div>
+    
+        <div class="w3-half w3-padding-large">
+            <h1 class="w3-center">About Us</h1><br>
+            <p class="w3-large">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa temporibus consequuntur ipsum reprehenderit aperiam, rerum aliquid, vitae ex officia dolorem, doloribus inventore explicabo sapiente ad in cupiditate culpa necessitatibus qui.</p>
+            <p class="w3-large">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa temporibus consequuntur ipsum reprehenderit aperiam, rerum aliquid, vitae ex officia dolorem, doloribus inventore explicabo sapiente ad in cupiditate culpa necessitatibus qui.</p>
+            <p class="w3-large w3-text-grey w3-hide-medium">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel error quidem, et voluptatum ea sunt. Ducimus iure illum quam deleniti. Sunt, obcaecati officia! Doloribus quod quis vel, alias explicabo eos?</p>
+            <p class="w3-large w3-text-grey w3-hide-medium">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel error quidem, et voluptatum ea sunt. Ducimus iure illum quam deleniti. Sunt, obcaecati officia! Doloribus quod quis vel, alias explicabo eos?</p>
+            
+        </div>
+    
+    </div>
+</div>
+    
+
+<div id="subscribe" class="w3-container w3-padding-16 w3-content w3-light-grey" style="margin-top:5%; margin-bottom: 5%">
+    <h1>Subscribe</h1>   
+    <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+        <p><button class="w3-button w3-section w3-right" type="submit"> SUBSCRIBE NOW </button></p>
+    </form>
+</div>
+
+
+<footer class="w3-container" style="background-color: #c8c5c5">
+    <div class="w3-center" style="margin:2%">
+        
+    <button onclick="myFunction()">Theme</button> <br>
+
+    <script>
+        function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        }
+    </script>
+
+        <h3 href="#home" class="w3-bar-item w3-button">Grandma's Recipes</h3> <br>
+        <a href="#about" class="type-subheading">About</a> <br>
+        <a href="#recipes" class="type-subheading">Recipes</a> <br>
+        <a href="#suscribe" class="type-subheading">Subscribe</a>   
+    </div> 
+
+  </footer>
 
 
 </body>
